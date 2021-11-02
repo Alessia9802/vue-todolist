@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>vue-todolist</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <div class="logo">
+          <img class="logoImage" :src="logoImage" alt="" />
+        </div>
+        <div class="addTasks">
+          <input
+            type="text"
+            v-model="newTasks"
+            @keyup.enter="addTask"
+            placeholder="nuovo todo"
+            class="new_todo"
+          />
+          <button v-on:click="addTask" class="btn_add">Aggiungi</button>
+          <div class="error" v-show="error">Inserisci una task</div>
+        </div>
+        <div class="tasks">
+          <div class="item" v-for="(task, index) in tasks">
+            {{task}}
+            <div class="delete" @click="removeTask(index)">
+              <i class="fas fa-times"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

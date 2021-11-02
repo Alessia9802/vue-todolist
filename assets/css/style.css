@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1000px;
+  margin: auto;
+  background-color: blanchedalmond;
+  text-align: center;
+}
+
+.logoImage {
+  width: 300px;
+  padding: 1rem;
+}
+
+.addTasks {
+  margin-bottom: 1rem;
+}
+
+.new_todo {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+
+.btn_add {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  width: 100px;
+}
+
+.tasks {
+  padding: 1rem;
+  display: inline-block;
+  background-color: gainsboro;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-bottom: 1px solid rgb(151, 150, 150);
+}
