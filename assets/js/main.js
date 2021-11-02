@@ -8,9 +8,9 @@ const app = new Vue({
   el: "#app",
   data: {
     logoImage: "https://www.boolean.careers/images/misc/logo.png",
-    newTask: "",
     tasks: ["Fare i compiti", "Fare la spesa", "Fare il bucato"],
     error: false,
+    newTask: "",
   },
   methods: {
     removeTask(i) {

@@ -45,3 +45,7 @@
   padding: 1rem;
   border-bottom: 1px solid #dadee1;
 }
+
+.fa-times {
+  cursor: pointer;
+}

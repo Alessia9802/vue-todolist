@@ -28,7 +28,7 @@
             placeholder="nuovo todo"
             class="new_todo"
           />
-          <button v-on:click="addTask" class="btn_add">Aggiungi</button>
+          <button @click="addTask" class="btn_add">Aggiungi</button>
           <div class="error" v-show="error">Inserisci una task</div>
         </div>
         <div class="tasks">
