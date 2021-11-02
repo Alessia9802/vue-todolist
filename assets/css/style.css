@@ -7,12 +7,11 @@
 .container {
   width: 1000px;
   margin: auto;
-  background-color: blanchedalmond;
   text-align: center;
 }
 
 .logoImage {
-  width: 300px;
+  width: 400px;
   padding: 1rem;
 }
 
@@ -22,26 +21,27 @@
 
 .new_todo {
   padding: 0.5rem 1rem;
-  border-radius: 20px;
+  border-radius: 10px;
+  width: 300px;
 }
 
 .btn_add {
   padding: 0.5rem 1rem;
-  border-radius: 20px;
+  border-radius: 10px;
   width: 100px;
 }
 
 .tasks {
-  padding: 1rem;
+  padding: 1.5rem;
   display: inline-block;
-  background-color: gainsboro;
-  width: 300px;
+  background-color: #f5f7f7;
+  width: 500px;
   border-radius: 10px;
 }
 
 .item {
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem;
-  border-bottom: 1px solid rgb(151, 150, 150);
+  padding: 1rem;
+  border-bottom: 1px solid #dadee1;
 }
